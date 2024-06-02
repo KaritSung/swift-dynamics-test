@@ -1,0 +1,16 @@
+$pagination-active-color : black;
+$pagination-disabled-color : gray;
+$tag-a-color : black;
+
+.custom-pagination .active {
+    color: $pagination-active-color;
+  }
+  
+  .custom-pagination .disabled {
+    color: $pagination-disabled-color;
+    pointer-events: none;
+  }
+
+.a-custom-style{
+    color: $tag-a-color;
+}

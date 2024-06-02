@@ -1,0 +1,137 @@
+$content-bg-color : red;
+
+$bg-button-color : #fff;
+$bg-button-color-hover : #ef9a31;
+$bg-button-color-active : #00bc22;
+
+$shape-triangle : polygon(50% 0%, 0% 100%, 100% 100%);
+$shape-circle : circle(50% at 50% 50%);
+$shape-ellipse : ellipse(50% 26% at 50% 50%);
+$shape-trapezium : polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+$shape-parallelogram : polygon(0 0, 68% 0, 100% 100%, 29% 100%);
+
+$bg-color-triangle : #6f6f6f;
+
+$text-color : #fff;
+
+.content {
+    width: min(100% - 15px, 1500px);
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: "flex";
+    justify-content: center !important;
+}
+
+.p{
+    margin: 0;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background-color: $bg-button-color;
+    height: 112px;
+    width: 100%;
+    padding: 1rem 1rem 1rem 1rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $bg-button-color-hover;
+    }
+
+    &:active {
+        background-color: $bg-button-color-active;
+    }
+}
+
+.triangle1 {
+    position: absolute;
+    width: 120px;
+    height: 85%;
+    rotate: 270deg;
+    clip-path: $shape-triangle;
+    background-color: $bg-color-triangle;
+}
+
+.triangle2 {
+    width: 120px;
+    height: 100%;
+    clip-path: $shape-triangle;
+    background-color: $bg-color-triangle;
+}
+
+.triangle3 {
+    width: 120px;
+    height: 100%;
+    rotate: 180deg;
+    clip-path: $shape-triangle;
+    background-color: $bg-color-triangle;
+}
+
+.triangle4 {
+    position: absolute;
+    width: 120px;
+    height: 100%;
+    rotate: 90deg;
+    clip-path: $shape-triangle;
+    background-color: $bg-color-triangle;
+}
+
+.warpper-text {
+    position: relative;
+    background-color: #00bc22;
+    padding: 3px 3px 3px 3px;
+    border-radius: 10px;
+    margin-top: 8.8rem;
+}
+
+.text{
+    margin: 0;
+    color: $text-color;
+    font-weight: 500;
+}
+
+.square {
+    width: 120px;
+    height: 120px;
+    background-color: $bg-color-triangle;
+}
+
+.circle{
+    width: 111.5px;
+    height: 100%;
+    clip-path: $shape-circle;
+    background-color: $bg-color-triangle;
+}
+
+.ellipse{
+    width: 100%;
+    height: 150%;
+    clip-path: $shape-ellipse;
+    background-color: $bg-color-triangle;
+}
+
+.trapezium{
+    width: 100%;
+    height: 100%;
+    clip-path: $shape-trapezium;
+    background-color: $bg-color-triangle;
+}
+
+.rectangle{
+    width: 100%;
+    height: 100%;
+    background-color: $bg-color-triangle;
+}
+
+.parallelogram{
+    width: 100%;
+    height: 100%;
+    clip-path: $shape-parallelogram;
+    background-color: $bg-color-triangle;
+}
