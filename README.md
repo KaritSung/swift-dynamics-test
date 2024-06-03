@@ -1,3 +1,10 @@
+# Swift Dynamics Test
+
+ช่องทางการติดต่อ
+นายคริษฐ์ สิทธิศักดิ์
+เบอร์โทร: 092-935-5603
+Email: karit.sittisak@gmail.com
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
