@@ -38,21 +38,21 @@ interface DataType {
 }
 
 type FieldType = {
-  title?: string;
-  firstname?: string;
-  lastname?: string;
-  birthday?: Date;
-  nationality?: string;
+  title: string;
+  firstname: string;
+  lastname: string;
+  birthday: Date;
+  nationality: string;
   citizen_id1?: string;
   citizen_id2?: string;
   citizen_id3?: string;
   citizen_id4?: string;
   citizen_id5?: string;
-  gender?: string;
-  mobile_phone?: string;
-  prefix_mobile?: string;
+  gender: string;
+  mobile_phone: string;
+  prefix_mobile: string;
   passport_no?: string;
-  expected_salary?: string;
+  expected_salary: string;
 };
 
 const { Option } = Select;
@@ -292,7 +292,6 @@ export function Test2() {
       (item) => !keysToDelete.includes(item.key)
     );
     localStorage.setItem("data", JSON.stringify(updatedData));
-    console.log(`Deleted items with keys: ${keysToDelete}`);
     setDatasourceToDataTable();
     alert(t("delete_success"));
     dispatch(setSelectRowKey([]));
@@ -313,7 +312,6 @@ export function Test2() {
 
     const updatedData = parsedData.filter((item) => item.key !== keyToDelete);
     localStorage.setItem("data", JSON.stringify(updatedData));
-    console.log(`Deleted items with keys: ${keyToDelete}`);
     setDatasourceToDataTable();
     alert(t("delete_success"));
     dispatch(setSelectRowKey([]));
@@ -361,7 +359,6 @@ export function Test2() {
 
   useEffect(() => {
     setDatasourceToDataTable();
-    console.log("UPDATE");
   }, []);
 
   return (
