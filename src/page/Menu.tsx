@@ -50,6 +50,7 @@ export function Menu() {
                   width: "50%",
                   height: "112px",
                   backgroundColor: "#fff",
+                  cursor: "pointer",
                   paddingLeft: "1rem",
                   paddingBottom: "0.5rem",
                 }}
